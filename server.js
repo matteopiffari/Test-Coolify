@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
 app.get('/db', (req, res) => {
     var con = mysql.createConnection({
         host: "10.30.0.10",
-        user: "root",
-        password: process.env.DBpass,
+        user: "piffa",
+        password: process.env.DB_PASSWORD,
         database: "piffa"
     });
 
